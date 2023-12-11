@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./calc.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="body" class="body">
+        <header class="header">
+            <div>Calculator</div>
+            <img src="icon/moon.png" alt="dark" class="icon" id="icon">
+        </header>
+        <main class="calculator">
+            <table class="table">       
+                <div id="display" class="display"></div>
+                <tr>
+                    <td><button onclick="clr()" id="clr">CL</button></td>         
+                    <td><button onclick="del()">Del</button></td>
+                    <td><button onclick="display('%')">%</button></td>
+                    <td><button onclick="display('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="display('1')">1</button></td>
+                    <td><button onclick="display('2')">2</button></td>
+                    <td><button onclick="display('3')">3</button></td>
+                    <td><button onclick="display('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="display('4')">4</button></td>
+                    <td><button onclick="display('5')">5</button></td>
+                    <td><button onclick="display('6')">6</button></td>
+                    <td><button onclick="display('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="display('7')">7</button></td>
+                    <td><button onclick="display('8')">8</button></td>
+                    <td><button onclick="display('9')">9</button></td>
+                    <td><button onclick="display('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="display('.')">.</button></td>
+                    <td><button onclick="display('0')">0</button></td>
+                    <td colspan="2"><button id="btn" onclick="calculate()">=</button></td>
+                </tr>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
